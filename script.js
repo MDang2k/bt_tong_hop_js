@@ -108,3 +108,44 @@ btn_ex5.addEventListener("click", () => {
 
     ex5_result.innerHTML = content
 })
+
+// bài 6
+
+const ex6 = document.querySelector(".ex6")
+const ex6_result = document.querySelector("#ex6_result")
+
+function exercise6() {
+
+    content = 'x nguyên dương lớn nhất thỏa 1+2+3+...+x ≤100 là '
+    
+    let sum = 0
+    let i = 1
+    while (sum <= 100) {
+        i++
+        sum += i
+    }
+
+    ex6_result.innerHTML += i
+}
+
+exercise6()
+
+// bài 7
+
+const ex7 = document.querySelector(".ex7")
+const ex7_result = document.querySelector("#ex7_result")
+const btn_ex7 = document.querySelector(".btn_ex7")
+const ipt_ex7 = document.querySelector("#ipt_ex7")
+
+function exercise7() {
+
+    let value = ipt_ex7.value * 1
+    content = ''
+    for(let i = 0; i <= 10; i++) {
+        content += `${value} x ${i} = ${value * i} <br>`
+    }
+
+    ex7_result.innerHTML = content
+}
+
+exercise7()
